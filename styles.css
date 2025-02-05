@@ -1,0 +1,97 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    width: 50px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+  }
+  
+  .slider:before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(25px);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  
+  .pb-2 {
+    padding-bottom: 0.5rem;
+  }
+  
+  .pt-4 {
+    padding-top: 1rem;
+  }
+  
+  .list-disc {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: inherit;
+  }
+  
+  .text-4xl {
+    font-size: 2.5rem;
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .youtube-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .youtube-container iframe {
+    width: 80%;
+    max-width: 560px;
+    height: 315px;
+  }
+  

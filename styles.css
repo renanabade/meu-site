@@ -73,10 +73,3 @@ a:hover {
   height: 100%;
 }
 
-.header-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem 0;
-  display: flex;
-  justify-content: flex-end;
-}
